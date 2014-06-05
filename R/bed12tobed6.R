@@ -1,6 +1,8 @@
-# Function: bed12.to.exons
-# In: filename (bed12 file)
-# Out: bed6 format exons in a data.frame
+#' Function: bed12.to.exons
+#' In: filename (bed12 file)
+#' Out: bed6 format exons in a data.frame
+#' @Example bed12.to.exons(bed.file) 
+
 bed12.to.exons<-function(bed.file,skip=0)
 {
   require(data.table)
@@ -18,4 +20,3 @@ bed12.to.exons<-function(bed.file,skip=0)
   return(rep.ref.dt[,1:6,with=F])
 } 
 
-#res=bed12.to.exons(bed.file) 

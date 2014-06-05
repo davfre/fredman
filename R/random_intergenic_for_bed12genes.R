@@ -58,8 +58,8 @@ bedtools_genomicGeneComplement = function(action,fn_bed12,fn_genome,opt.string="
 
 #sizes is chrom\tsize
 #geneBed is a bed12 format. convert gff-> bed using e.g. https://code.google.com/p/bedops/wiki/gff2bed
-fn_genomeSizes = "~/data/seqdb/nematostella_vectensis/nematostella_vectensis.wga.nemve1.sizes"
-fn_geneBed = "~/data/seqdb/nematostella_vectensis/gene_annotation/nvie.120810/nvie.120810.nemVec1.bed"
+fn_genomeSizes = "genome.sizes"
+fn_geneBed = "genes..bed"
 
 sizes = bedtools_genomicGeneComplement("complement",fn_geneBed,fn_genomeSizes)
 
