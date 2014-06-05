@@ -5,7 +5,7 @@ Description: A series of functions for routine tasks
 Author: David Fredman
 Maintainer: David Fredman <david.fredman@uib.no>
 Depends: 
-Suggests:
+Suggests: testthat
 Imports: 
 License: Artistic-2.0
 Collate: 
