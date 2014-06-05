@@ -26,7 +26,7 @@ shannonEntropy <- function(p)
 
 temporalSpecificity <- function(expression_vector)
 {
-    e=shannon.entropy(expression_vector)
+    e=shannonEntropy(expression_vector)
     N=length(expression_vector)
     specificity = 1 - e/log2(N)
     return(specificity)
@@ -42,9 +42,9 @@ temporalSpecificity <- function(expression_vector)
 #' (Q in Schug et al)
 
 categoricalSpecificity = function(expression_vector){
-    s = temporal_specificity(expression_vector)
+    s = temporalSpecificity(expression_vector)
     categorical_specificity = s - log2(expression_vector/sum(expression_vector))
-    names(cat_specificity)=names(expression_matrix)
+    names(categorical_specificity)=names(expression_vector)
     return(categorical_specificity)    
 }
 
