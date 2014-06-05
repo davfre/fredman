@@ -1,0 +1,12 @@
+Package: fredman
+Version: 0.0.1
+Title: Convenience functions used by David Fredman
+Description: A series of functions for routine tasks
+Author: David Fredman
+Maintainer: David Fredman <david.fredman@uib.no>
+Depends: 
+Suggests:
+Imports: 
+License: Artistic-2.0
+Collate: 
+LazyData: yes
